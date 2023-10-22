@@ -3,7 +3,7 @@ env:
     REGISTRY_HOST: "ghcr.io"
     IMAGE_NAME: "saurabh-wadhwa/sysdig-cli-test"
     IMAGE_TAG: "latest"
-    DOCKERFILE_CONTEXT: "github/"
+    DOCKERFILE_CONTEXT: "github/new-scan-engine"
   
 name: Container build, scan and push
 
