@@ -24,7 +24,6 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         context: "${{ github.server_url }}/${{ github.repository }}.git#${{ github.ref }}:vote"
-        file: "${{ env.DOCKERFILE_CONTEXT }}Dockerfile.log4j"
         tags: ${{ env.REGISTRY_HOST }}/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
         load: true
     
